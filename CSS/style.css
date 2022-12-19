@@ -1,0 +1,227 @@
+body{
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1170px;
+}
+h2{
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 auto;
+    line-height: 115%;
+    color: black;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Ovo', Arial, sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0 auto;
+    line-height: 90%;
+    color: black;
+}
+h4{
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 auto;
+    line-height: 115%;
+    color: black;
+}
+p{
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    line-height: 120%;
+    color: black;
+    text-align: justify;
+}
+div.bouton{
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: black;
+    text-transform: uppercase;
+    border: solid black 1px;
+    border-radius: 5px;
+    display: inline;
+    padding: 7px 40px 7px 40px;
+}
+div.bouton:hover{
+    color: #428BCA;
+    background-color: white;
+    border-color: white;
+}
+a, li{
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: black;
+}
+ul{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #428BCA;
+}
+
+
+/*Section Header (et techniquement Hero)*/
+header{
+    background-image: url("../Images/HeroImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header div.header{
+    background-image: linear-gradient(180deg, rgba(255, 247, 209, 0.65) 0%, rgba(247, 255, 247, 0.65) 100%);
+    background-size: cover;
+}
+header div.header div.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+header div.header div.wrapper ul{
+    gap: 40px;
+    align-items: center;
+}
+header div.texteHero{
+    text-align: center;
+    padding: 200px 0 200px 0;
+}
+header div.texteHero h3{
+    padding: 70px 294px 70px 294px;
+}
+header div.texteHero div.bouton{
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+}
+header div.texteHero div.bouton:hover{
+    background-color: #428BCA;
+    border-color: #428BCA;
+}
+
+/*Section Main*/
+main, section.Saison{
+    background-image: url("../Images/TextureVert.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main div.sousTitre{
+    text-align: center;
+    max-width: 582px;
+    margin: 0 auto;
+    padding: 100px 0 50px 0;
+}
+main div.sousTitre h2{
+    padding-bottom: 20px;
+}
+main div.articleMain{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-bottom: 100px;
+}
+main div.articleMain article{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+main div.articleMain article div.sideTexteDroit{
+    padding-right: 70px;
+}
+main div.articleMain article div.sideTexteGauche{
+    padding-left: 70px;
+}
+main div.articleMain article h4{
+    color: #428BCA;
+}
+main div.articleMain article p{
+    padding-top: 10px;
+}
+
+/*Sections Section Fashion et Section Saison*/
+section.Fashion{
+    background-image: url("../Images/TextureMauve.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section div.sousTitre{
+    text-align: center;
+    margin: 0 auto;
+    padding: 70px 0 40px 0;
+}
+section div.sousTitre h4{
+    max-width: 488px;
+    padding-top: 40px;
+}
+section.Fashion div.sousTitre h3, section.Fashion div.sousTitre h4{
+    color: white;
+}
+section div.articleSection{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+section div.articleSection article{
+    display: flex;
+    flex-direction: column;
+}
+section div.articleSection article div.downTexte{
+    background-color: white;
+    padding: 20px;
+}
+section div.articleSection article div.downTexte h4{
+    padding-bottom: 50px;
+}
+
+/*Section Footer*/
+footer{
+    background-color: #6CA6C1;
+}
+footer nav.menuFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;/*De base 150px, mais le texte ne rentrait pas correctement*/
+    margin: 0 auto;
+    padding: 50px 0 60px 0;
+}
+footer nav.menuFooter ul{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+footer div.logosFooter{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    border-top: solid black 2px;
+    max-width: 970px;
+    padding: 60px 0 60px 0;
+    margin: 0 auto;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 40px;
+}
+footer a:hover{
+    color: white;
+}
